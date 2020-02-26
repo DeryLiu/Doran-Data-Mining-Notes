@@ -1,0 +1,63 @@
+{
+  "title": "买断项目文档",
+  "description": "买断预测模型相关文档及说明文件",
+  "language": "zh",
+  "pluginsConfig": {
+    "fontSettings": {
+      "theme": "white",
+      "family": "msyh",
+      "size": 2
+    },
+    "plugins": [
+      "gitbook-plugin-mermaid-gb3",
+      "gitbook-mermaid",
+      "yahei",
+      "katex",
+      "-search",
+      "-sharing",
+      "sharing-plus",
+      "include-codeblock",
+      "-lunr",
+      "search-pro",
+      "collapsible-menu",
+      "bibtex-indexed-cite",
+      "-livereload",
+      "prism",
+      "-highlight",
+      "url-embed",
+      "page-footer-ex",
+      "mermaid-gb3",
+      "-mermaid",
+      "Autocover",
+      "JSBin",
+      "back-to-top-button",
+      "chapter-fold",
+      "expandable-chapters-small",
+      "code", "pageview-count"
+      , "search-pro"
+      ,"auto-scroll-table"
+    ],
+    "pluginsConfig": {
+          "code": {
+          "copyButtons": false
+      }
+    }
+  },
+  "fontState": {
+    "size": "2",
+    "family": "sans",
+    "theme": "night"
+  },
+  "pdf": {
+    "pageNumbers": true,
+    "fontFamily": "Arial",
+    "fontSize": 12,
+    "paperSize": "a4",
+    "margin": {
+      "right": 62,
+      "left": 62,
+      "top": 56,
+      "bottom": 56
+    }
+  }
+}
