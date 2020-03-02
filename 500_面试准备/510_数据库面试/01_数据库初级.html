@@ -1,0 +1,852 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01_数据库初级 · Doran的数据挖掘笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../520_数据挖掘面试/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../100_基础知识/">
+            
+                <a href="../../100_基础知识/">
+            
+                    
+                    100_基础知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../100_基础知识/110_SQL技能/">
+            
+                <a href="../../100_基础知识/110_SQL技能/">
+            
+                    
+                    110_SQL技能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../100_基础知识/110_SQL技能/111_SQL技能.html">
+            
+                <a href="../../100_基础知识/110_SQL技能/111_SQL技能.html">
+            
+                    
+                    111_SQL技能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../100_基础知识/120_Python技能/">
+            
+                <a href="../../100_基础知识/120_Python技能/">
+            
+                    
+                    120_Python技能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../100_基础知识/120_Python技能/121_Python技能.html">
+            
+                <a href="../../100_基础知识/120_Python技能/121_Python技能.html">
+            
+                    
+                    120_Python技能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../200_算法推导/">
+            
+                <a href="../../200_算法推导/">
+            
+                    
+                    200_算法推导
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../200_算法推导/01_基础逻辑.md">
+            
+                <span>
+            
+                    
+                    01_基础逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../200_算法推导/02_订单结算.md">
+            
+                <span>
+            
+                    
+                    02_订单结算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../200_算法推导/03_爬虫方案.md">
+            
+                <span>
+            
+                    
+                    03_爬虫方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../200_算法推导/04_比价覆盖房态.md">
+            
+                <span>
+            
+                    
+                    04_比价覆盖房态
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../300_框架工具/">
+            
+                <a href="../../300_框架工具/">
+            
+                    
+                    300_框架工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../300_框架工具/310_Echart/">
+            
+                <a href="../../300_框架工具/310_Echart/">
+            
+                    
+                    310_Echart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../300_框架工具/320_XGBoost/">
+            
+                <a href="../../300_框架工具/320_XGBoost/">
+            
+                    
+                    320_XGBoost
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../300_框架工具/330_Tensorflow/">
+            
+                <a href="../../300_框架工具/330_Tensorflow/">
+            
+                    
+                    330_Tensorflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../400_项目案例/">
+            
+                <a href="../../400_项目案例/">
+            
+                    
+                    400_项目案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../400_项目案例/410_Kaggle/">
+            
+                <a href="../../400_项目案例/410_Kaggle/">
+            
+                    
+                    410_Kaggle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    500_面试准备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    510_数据库面试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1.1" data-path="01_数据库初级.html">
+            
+                <a href="01_数据库初级.html">
+            
+                    
+                    01_数据库初级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../520_数据挖掘面试/">
+            
+                <a href="../520_数据挖掘面试/">
+            
+                    
+                    520_数据挖掘面试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../520_数据挖掘面试/01_数据挖掘工程师面试_选择题.html">
+            
+                <a href="../520_数据挖掘面试/01_数据挖掘工程师面试_选择题.html">
+            
+                    
+                    01数据挖掘工程师面试选择题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../520_数据挖掘面试/02_数据挖掘工程师面试_简答题.html">
+            
+                <a href="../520_数据挖掘面试/02_数据挖掘工程师面试_简答题.html">
+            
+                    
+                    02数据挖掘工程师面试简答题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="../520_数据挖掘面试/03_数据挖掘150道试题.html">
+            
+                <a href="../520_数据挖掘面试/03_数据挖掘150道试题.html">
+            
+                    
+                    03_数据挖掘150道试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../530_Python面试/">
+            
+                <a href="../530_Python面试/">
+            
+                    
+                    530_Python面试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../530_Python面试/01_阿里巴巴Python工程师真题.html">
+            
+                <a href="../530_Python面试/01_阿里巴巴Python工程师真题.html">
+            
+                    
+                    01_阿里巴巴Python工程师真题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../530_Python面试/02_面试必备25条Python知识点.html">
+            
+                <a href="../530_Python面试/02_面试必备25条Python知识点.html">
+            
+                    
+                    02_面试必备25条Python知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../540_Spark面试/">
+            
+                <a href="../540_Spark面试/">
+            
+                    
+                    540_Spark面试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="../540_Spark面试/01_Spark问答合集.html">
+            
+                <a href="../540_Spark面试/01_Spark问答合集.html">
+            
+                    
+                    01_Spark问答合集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../600_其它资料/">
+            
+                <a href="../../600_其它资料/">
+            
+                    
+                    600_其它资料
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../600_其它资料/01_Gitlab配置.md">
+            
+                <span>
+            
+                    
+                    01_Gitlab配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >01_数据库初级</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><a href="https://developer.aliyun.com/exam/intro/303?spm=5176.13257465.1389990.2.656149c9nLKEeI" target="_blank">&#x9762;&#x8BD5;&#x9898;&#x6765;&#x6E90;</a></p>
+<h4 id="&#x5355;&#x9009;">&#x5355;&#x9009;</h4>
+<ol>
+<li>&#x5982;&#x4F55;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#xFF1F;</li>
+<li>[x] A.DROP DATABASE database_name;</li>
+<li>[ ] B.DROP SQLDATABASE database_name;</li>
+<li>[ ] C.Delete DATABASE database_name;</li>
+<li><p>[ ] D.DROP SQLDATABASE database_name;</p>
+</li>
+<li><p>&#x4E0B;&#x5217;&#x54EA;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x7528;&#x4E8E;&#x6709;&#x6761;&#x4EF6;&#x5730;&#x4ECE;&#x8868;&#x4E2D;&#x9009;&#x53D6;&#x6570;&#x636E;&#x7684;&#x662F;&#xFF1A;</p>
+</li>
+<li>[x] A.WHERE</li>
+<li>[ ] B.SELECT</li>
+<li>[ ] C.UNION</li>
+<li><p>[ ] D.IN</p>
+</li>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x7684;&#x82F1;&#x6587;&#x7F29;&#x5199;&#x662F;&#xFF08;&#xFF09;&#x3002;</p>
+</li>
+<li>[ ] A.DB</li>
+<li>[ ] B.DBS</li>
+<li>[ ] C.DBA</li>
+<li><p>[x] D.DBMS</p>
+</li>
+<li><p>MySQL&#x6C42;&#x548C;&#x51FD;&#x6570;&#x662F;&#xFF1F;</p>
+</li>
+<li>[ ] A.Max()</li>
+<li>[ ] B.Min()</li>
+<li>[ ] C.Avg()</li>
+<li>[x] D.Sum()</li>
+<li><p>[ ] E.Now()</p>
+</li>
+<li><p>&#x4E0B;&#x5217;&#x5C5E;&#x4E8E;PL/SQL&#x5E38;&#x89C1;&#x7684;&#x5206;&#x652F;&#x8BED;&#x53E5;&#x662F;&#xFF08;&#xFF09;&#x3002;</p>
+</li>
+<li>[x] A.IF&#x8BED;&#x53E5;</li>
+<li>[ ] B.LOOP&#x8BED;&#x53E5;</li>
+<li>[ ] C.WHILE&#x8BED;&#x53E5;</li>
+<li><p>[ ] D.SELECT&#x8BED;&#x53E5;</p>
+</li>
+<li><p>&#x5982;&#x4F55;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x8868;&#xFF1F;</p>
+</li>
+<li>[ ] A.DROP DATATABLE datatable_name</li>
+<li>[ ] B.DROP SQLTable datatable _name</li>
+<li>[ ] C.Delete TABLE datatable _name</li>
+<li><p>[x] D.DROP TABLE datatable _name</p>
+</li>
+<li><p>&#x4EC0;&#x4E48;&#x662F;3NF&#xFF1F;</p>
+</li>
+<li>[ ] A.&#x6EE1;&#x8DB3;1NF&#xFF0C;&#x8868;&#x4E2D;&#x5305;&#x542B;&#x5DF2;&#x5728;&#x5176;&#x5B83;&#x8868;&#x4E2D;&#x5DF2;&#x5305;&#x542B;&#x7684;&#x975E;&#x4E3B;&#x5173;&#x952E;&#x5B57;&#x4FE1;&#x606F;</li>
+<li>[ ] B.&#x6EE1;&#x8DB3;1NF&#xFF0C;&#x8868;&#x4E2D;&#x4E0D;&#x5305;&#x542B;&#x5DF2;&#x5728;&#x5176;&#x5B83;&#x8868;&#x4E2D;&#x5DF2;&#x5305;&#x542B;&#x7684;&#x975E;&#x4E3B;&#x5173;&#x952E;&#x5B57;&#x4FE1;&#x606F;</li>
+<li>[ ] C.&#x6EE1;&#x8DB3;2NF&#xFF0C;&#x8868;&#x4E2D;&#x5305;&#x542B;&#x5DF2;&#x5728;&#x5176;&#x5B83;&#x8868;&#x4E2D;&#x5DF2;&#x5305;&#x542B;&#x7684;&#x975E;&#x4E3B;&#x5173;&#x952E;&#x5B57;&#x4FE1;&#x606F;</li>
+<li><p>[x] D.&#x6EE1;&#x8DB3;2NF&#xFF0C;&#x8868;&#x4E2D;&#x4E0D;&#x5305;&#x542B;&#x5DF2;&#x5728;&#x5176;&#x5B83;&#x8868;&#x4E2D;&#x5DF2;&#x5305;&#x542B;&#x7684;&#x975E;&#x4E3B;&#x5173;&#x952E;&#x5B57;&#x4FE1;&#x606F;</p>
+</li>
+<li><p>InnoDB&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x6700;&#x4F4E;&#x652F;&#x6301;&#x4EC0;&#x4E48;&#x7EA7;&#x522B;&#x9501;&#xFF1F;</p>
+</li>
+<li>[ ] A.&#x5B57;&#x6BB5;&#x9501;</li>
+<li>[x] B.&#x884C;&#x9501;</li>
+<li>[ ] C.&#x8868;&#x9501;</li>
+<li><p>[ ] D.&#x6570;&#x636E;&#x5E93;&#x9501;</p>
+</li>
+<li><p>SQL&#x547D;&#x4EE4;&#x67E5;&#x8BE2;&#x4E0D;&#x91CD;&#x590D;&#x8BB0;&#x5F55;&#xFF1F;</p>
+</li>
+<li>[ ] A.SELECT Difference * from Table_Name</li>
+<li>[ ] B.SELECT NUM from Table_Name</li>
+<li>[ ] C.SELECT ALL from Table_Name</li>
+<li><p>[x] D.SELECT Distinct id from Table_Name</p>
+</li>
+<li><p>MySQL Shell&#x547D;&#x4EE4;&#x4F7F;&#x7528;&#x8D26;&#x6237;&#x548C;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x6570;&#x636E;&#x5E93;&#x7684;&#x683C;&#x5F0F;&#x662F;&#xFF1F;</p>
+</li>
+<li>[x] A.mysql -u root -p</li>
+<li>[ ] B.mysql -username root -passwprd</li>
+<li>[ ] C.mysql -name root -password</li>
+<li><p>[ ] D.mysql -user root -password</p>
+</li>
+<li><p>SQL&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#xFF1F;</p>
+</li>
+<li>[ ] A.CREATE db my_db</li>
+<li>[ ] B.CREATE SQLDATABASE my_db</li>
+<li>[ ] C.CREATE MYDATABASE my_db</li>
+<li><p>[x] D.CREATE DATABASE my_db</p>
+</li>
+<li><p>MySQL&#x4E8B;&#x52A1;&#x4E2D;&#x9694;&#x79BB;&#x6027;&#x6307;&#x7684;&#x662F;&#xFF1F;</p>
+</li>
+<li>[ ] A. &#x4E8B;&#x52A1;&#x4E2D;&#x7684;SQL&#x547D;&#x4EE4;&#x662F;&#x76F8;&#x4E92;&#x9694;&#x79BB;&#x6267;&#x884C;&#x7684;</li>
+<li>[ ] B. &#x4E8B;&#x52A1;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x76F8;&#x4E92;&#x9694;&#x79BB;&#x7684;</li>
+<li>[x] C. &#x4E8B;&#x52A1;&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x9694;&#x79BB;</li>
+<li><p>[ ] D. &#x4E8B;&#x52A1;&#x7684;&#x8FDE;&#x63A5;&#x4E4B;&#x95F4;&#x662F;&#x76F8;&#x4E92;&#x9694;&#x79BB;&#x7684;</p>
+</li>
+<li><p>MySQL&#x4E8B;&#x52A1;&#x4E2D;&#x4E00;&#x81F4;&#x6027;&#x6307;&#x7684;&#x662F;&#xFF1F;</p>
+</li>
+<li>[ ] A. &#x4E8B;&#x52A1;&#x4E2D;&#x7684;SQL&#x547D;&#x4EE4;&#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
+<li>[ ] B. &#x4E8B;&#x52A1;&#x4FEE;&#x6539;&#x524D;&#x540E;&#x7684;&#x6570;&#x636E;&#x603B;&#x4F53;&#x4FDD;&#x8BC1;&#x4E00;&#x81F4;</li>
+<li>[x] C. &#x4E8B;&#x52A1;&#x4E2D;&#x7684;&#x8868;&#x8BB0;&#x5F55;&#x6570;&#x91CF;&#x4E00;&#x81F4;</li>
+<li>[ ] D. &#x4E8B;&#x52A1;&#x4E2D;&#x7684;&#x8868;&#x8BB0;&#x5F55;&#x5B57;&#x6BB5;&#x6570;&#x91CF;&#x4E00;&#x81F4;</li>
+</ol>
+<h4 id="&#x5224;&#x65AD;">&#x5224;&#x65AD;</h4>
+<ol>
+<li>MySQL&#x540C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4E0D;&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x4E0D;&#x540C;&#x5F15;&#x64CE;&#xFF0C;&#x8FD9;&#x4E00;&#x8BF4;&#x6CD5;&#x662F;&#x5426;&#x6B63;&#x786E;&#xFF1F;</li>
+<li>[ ] &#x6B63;&#x786E;</li>
+<li>[x] &#x9519;&#x8BEF;</li>
+</ol>
+<h4 id="&#x591A;&#x9009;">&#x591A;&#x9009;</h4>
+<ol>
+<li>&#x5728;SQL&#x4E2D;&#xFF0C;&#x5173;&#x4E8E;DDL&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x9519;&#x8BEF;&#x7684;&#x662F;&#xFF08;&#xFF09;&#x3002;</li>
+<li>[x] A.DDL&#x662F;&#x6570;&#x636E;&#x67E5;&#x8BE2;&#x8BED;&#x8A00;</li>
+<li>[x] B.DDL&#x662F;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x8BED;&#x8A00;</li>
+<li>[ ] C.DDL&#x662F;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x8BED;&#x8A00;</li>
+<li><p>[x] D.DDL&#x662F;&#x6570;&#x636E;&#x63A7;&#x5236;&#x8BED;&#x8A00;</p>
+</li>
+<li><p>MySQL&#x4E2D;&#x4E0D;&#x5C5E;&#x4E8E;&#x6D6E;&#x70B9;&#x7C7B;&#x578B;&#x7684;&#x662F;&#xFF08;&#xFF09;&#x3002;</p>
+</li>
+<li>[x] A.INT</li>
+<li>[x] B.CHAR</li>
+<li>[x] C.TINY</li>
+<li><p>[ ] D.FLOAT</p>
+</li>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x6027;&#x80FD;&#x4E0B;&#x964D;&#xFF0C;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x957F;&#xFF0C;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x957F;&#xFF0C;&#x53EF;&#x80FD;&#x7684;&#x539F;&#x56E0;&#x662F;&#xFF1F;</p>
+</li>
+<li>[x] A.&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x5199;&#x7684;&#x4E0D;&#x597D;</li>
+<li>[x] B.&#x7D22;&#x5F15;&#x5931;&#x6548;</li>
+<li>[x] C.&#x5173;&#x8054;&#x67E5;&#x8BE2;&#x592A;&#x591A;join</li>
+<li><p>[x] D.&#x670D;&#x52A1;&#x5668;&#x53C2;&#x6570;&#x672A;&#x8C03;&#x4F18;</p>
+</li>
+<li><p>Database&#x6570;&#x636E;&#x5E93;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</p>
+</li>
+<li>[ ] A.&#x63D0;&#x4F9B;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x529F;&#x80FD;</li>
+<li>[ ] B.&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x7684;&#x67E5;&#x8BE2;&#x529F;&#x80FD;</li>
+<li>[ ] C.&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x7684;&#x5206;&#x6790;&#x529F;&#x80FD;</li>
+<li><p>[ ] D.&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x7684;&#x7BA1;&#x7406;&#x529F;&#x80FD;</p>
+</li>
+<li><p>MySQL&#x4E2D;&#x8868;&#x53D8;&#x91CF;&#x7684;&#x7279;&#x70B9;&#x662F;&#xFF1F;</p>
+</li>
+<li>[ ] A.&#x4FDD;&#x5B58;&#x4E34;&#x65F6;&#x6570;&#x636E;&#x5230;&#x78C1;&#x76D8;</li>
+<li>[x] B.&#x4FDD;&#x5B58;&#x4E34;&#x65F6;&#x6570;&#x636E;&#x5230;&#x5185;&#x5B58;</li>
+<li>[x] C.&#x9700;&#x8981;&#x624B;&#x52A8;&#x5220;&#x9664;&#x8868;</li>
+<li><p>[ ] D.&#x4F1A;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x8868;</p>
+</li>
+<li><p>&#x5728;&#x57FA;&#x672C;SQL&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#xFF08;&#xFF09;&#x3002;</p>
+</li>
+<li>[x] A.&#x5B9A;&#x4E49;&#x89C6;&#x56FE;</li>
+<li>[x] B.&#x5E76;&#x53D1;&#x63A7;&#x5236;</li>
+<li>[x] C.&#x5B9A;&#x4E49;&#x57FA;&#x8868;</li>
+<li><p>[ ] D.&#x67E5;&#x8BE2;&#x89C6;&#x56FE;&#x548C;&#x57FA;</p>
+</li>
+<li><p>&#x4E0B;&#x5217;&#x54EA;&#x4E9B;&#x662F;&#x5F00;&#x6E90;&#x6570;&#x636E;&#x5E93;&#xFF1F;</p>
+</li>
+<li>[x] A.MySQL</li>
+<li>[ ] B.Oracle</li>
+<li>[x] C.MongoDB</li>
+<li>[x] D.HBase</li>
+<li>[ ] E.SQL Server</li>
+<li><p>[x] F.Redis</p>
+</li>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;ACID&#x662F;&#x4EC0;&#x4E48;&#x542B;&#x4E49;&#xFF1F;</p>
+</li>
+<li>[x] A.&#x539F;&#x5B50;&#x6027;</li>
+<li>[ ] B.&#x539F;&#x59CB;&#x6027;</li>
+<li>[x] C.&#x4E00;&#x81F4;&#x6027;</li>
+<li>[x] D.&#x9694;&#x79BB;&#x6027;</li>
+<li>[x] E.&#x6301;&#x4E45;&#x6027;</li>
+<li>[ ] F.&#x5171;&#x4EAB;&#x6027;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 510_数据库面试">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../520_数据挖掘面试/" class="navigation navigation-next " aria-label="Next page: 520_数据挖掘面试">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01_数据库初级","level":"1.6.1.1","depth":3,"next":{"title":"520_数据挖掘面试","level":"1.6.2","depth":2,"path":"500_面试准备/520_数据挖掘面试/README.md","ref":"500_面试准备/520_数据挖掘面试/README.md","articles":[{"title":"01数据挖掘工程师面试选择题","level":"1.6.2.1","depth":3,"path":"500_面试准备/520_数据挖掘面试/01_数据挖掘工程师面试_选择题.md","ref":"500_面试准备/520_数据挖掘面试/01_数据挖掘工程师面试_选择题.md","articles":[]},{"title":"02数据挖掘工程师面试简答题","level":"1.6.2.2","depth":3,"path":"500_面试准备/520_数据挖掘面试/02_数据挖掘工程师面试_简答题.md","ref":"500_面试准备/520_数据挖掘面试/02_数据挖掘工程师面试_简答题.md","articles":[]},{"title":"03_数据挖掘150道试题","level":"1.6.2.3","depth":3,"path":"500_面试准备/520_数据挖掘面试/03_数据挖掘150道试题.md","ref":"500_面试准备/520_数据挖掘面试/03_数据挖掘150道试题.md","articles":[]}]},"previous":{"title":"510_数据库面试","level":"1.6.1","depth":2,"path":"500_面试准备/510_数据库面试/README.md","ref":"500_面试准备/510_数据库面试/README.md","articles":[{"title":"01_数据库初级","level":"1.6.1.1","depth":3,"path":"500_面试准备/510_数据库面试/01_数据库初级.md","ref":"500_面试准备/510_数据库面试/01_数据库初级.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"fontState":{"size":"2","family":"sans","theme":"night"},"pluginsConfig":{"plugins":["gitbook-plugin-mermaid-gb3","gitbook-mermaid","yahei","katex","-search","-sharing","sharing-plus","include-codeblock","-lunr","search-pro","collapsible-menu","bibtex-indexed-cite","-livereload","prism","-highlight","url-embed","page-footer-ex","mermaid-gb3","-mermaid","Autocover","JSBin","back-to-top-button","chapter-fold","expandable-chapters-small","code","pageview-count","search-pro","auto-scroll-table"],"pluginsConfig":{"code":{"copyButtons":false}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"white","family":"msyh","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Doran的数据挖掘笔记","language":"zh","gitbook":"*","description":"Doran个人的数据挖掘学习笔记，用于个人成长和进阶"},"file":{"path":"500_面试准备/510_数据库面试/01_数据库初级.md","mtime":"2020-02-27T10:52:39.249Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-02T14:58:18.230Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
