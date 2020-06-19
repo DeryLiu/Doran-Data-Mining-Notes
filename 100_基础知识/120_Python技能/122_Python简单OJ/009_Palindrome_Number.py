@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/palindrome-number/
 # Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
-#
+# 判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
 # Example 1:
 # Input: 121
 # Output: true
@@ -23,13 +23,14 @@ class Solution:
         """
         return str(x) == str(x)[::-1]
 
-
+# 不将整数转为字符串来解决这个问题
 class Solution2:
     def isPalindrome(self, x):
         """
         :type x: int
         :rtype: bool
         """
+        # 负数一定不行
         if x < 0:
             return False
         original_x = x
