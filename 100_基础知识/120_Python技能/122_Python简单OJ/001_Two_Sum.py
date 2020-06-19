@@ -11,10 +11,11 @@
 class Solution:
     def twoSum(self, nums: 'List[int]', target: 'int') -> 'List[int]':
         # 相当于java的map，取索引和对应值
+        # 新建一个字典，key是数值，value是索引
         dictionary = {value: index for (index, value) in enumerate(nums)}
         for (i, v) in enumerate(nums):
             targetNum = target - v
-            # 差的值在nums里，且不是当前的这个值
+            # 差的值在nums里可以取到，且不是当前的这个值
             if targetNum in dictionary and dictionary[targetNum] != i:
                 return [i, dictionary[targetNum]]
 # 解题是需要返回索引，所以建立一个字典，保存索引和值；
@@ -22,15 +23,3 @@ class Solution:
 
 # Time complexity : O(n^2)
 # Space complexity : O(1).
-
-# java版
-public int[] twoSum(int[] nums, int target) {
-    for (int i = 0; i < nums.length; i++) {
-        for (int j = i + 1; j < nums.length; j++) {
-            if (nums[j] == target - nums[i]) {
-                return new int[] { i, j };
-            }
-        }
-    }
-    throw new IllegalArgumentException("No two sum solution");
-}
